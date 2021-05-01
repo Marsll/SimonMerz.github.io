@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon-Philipp Merz</title>
+
+  <script>
+  window.onload = function() {
+    var anchors = document.getElementsByTagName('a');
+    for (var i = 0; i < anchors.length; i++) {
+        anchors[i].setAttribute('target', '_top');
+    }
+	}
+  </script>
+
+
+  <style>
+
+    body {
+      color: #222; /* text color */
+      background: #fff; /* outer background */
+      font-family: Helvetica;
+    }
+
+    hr {
+      background: #333; /* divider color */
+    }
+
+    li:before {
+      content: "•"; /* list bullet type */
+    }
+
+    .all {
+      background: #fff; /* inner background */
+      max-width: 1000px; /* text width */
+    }
+
+    .main {
+      flex: 5;
+    }
+
+    .aside {
+      flex: 3;
+    }
+
+    /* -----  Theme  ------------------------------------------------------------ */
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-size: 1.1em;
+      font-smoothing: antialiased;
+      line-height: 1.4;
+      margin: 4em auto 6em auto;
+    }
+
+    a,
+    a:visited {
+      border-bottom: 1px solid #ccc;
+      color: #20979B;
+      text-decoration: none;
+      transition: all .3s ease;
+    }
+
+    a:hover {
+      border-bottom: 1px solid;
+      color: #20979B;
+    }
+
+    figure {
+      margin-bottom: 2em;
+    }
+
+    figcaption {
+      font-size: .6rem;
+      font-weight: 700;
+      letter-spacing: .04rem;
+      margin: .5em 0;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      font-weight: 400;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 0.4em;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      margin: 2em;
+      position: relative;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 0em;
+      padding: 0em;
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    li {
+      padding-left: 1em;
+    }
+
+    ul.spacing li {
+      margin-top: 0.6em;
+    }
+
+    li:before {
+      display: inline-block;
+      margin-left: -1em;
+      width: 1em;
+    }
+
+    .all {
+      border-radius: .1em;
+      margin: auto;
+      padding: 3em 2em;
+    }
+
+    @media (min-width: 520px) {
+      .all {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+
+    .aside {
+      padding: 1em 1em 0em 1em;
+      clear: both;
+      float: none;
+    }
+
+    .big {
+      font-size: 1.4rem;
+    }
+
+    .main {
+      display: block;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .indent {
+      margin-left: 2em;
+    }
+
+    .event-name {
+    	font-weight: 600;
+    }
+  </style>
+</head>
+
+<body id="index">
+  <div class="all">
+     <aside class="aside">
+      <figure>
+        <img src="me.jpg" alt="Simon-Philipp Merz" class="photo">
+	</br>
+	</br>
+	<h3>Email:</h3>
+	<p><a href="mailto:simon-philipp.2018@rhul.ac.uk">simon-philipp.2018@rhul.ac.uk</a>
+	<br />
+	<br />
+
+	
+	<h3><a href="Academic_CV_Simon_Philipp_Merz.pdf">Academic CV</a></h3>
+
+	<h3><a href="https://dblp.org/pid/231/4298.html">dblp</a></h3>
+	<ul>
+         <!-- <li><b>Address:</b> </li>
+	  <li><b>Office:</b> </li> -->
+      </ul>
+      </figure>
+     </aside>
+     
+    <main class="main">
+      <section class="box highlight">
+        <h1>Simon-Philipp Merz</h1>
+      </section>
+
+      <section class="box research">
+	<h2>About me</h2>
+	<p>I am currently a PhD student in the Information Security Group at Royal Holloway, University of London. My supervisors are <a href="http://www.ma.rhul.ac.uk/sblackburn">Simon Blackburn</a> and <a href="http://homepages.ulb.ac.be/~chripeti/index.html">Christophe Petit</a>. <br />
+	<p>My doctoral research revolves around post-quantum cryptography and cryptanalysis with a special focus on isogeny-based cryptography. More generally, I am interested in computational number theory and various applications of pure mathematics to cryptography.  <br />
+
+	
+	<br />
+
+	<p>Before joining Royal Holloway, I obtained a BSc in Mathematics from the Free University of Berlin, an MSc in Pure Mathematics from Imperial College London and an MSc in Mathematics and Foundations of Computer Science from the University of Oxford.</p>
+
+	<br />
+	<br />
+
+	<h2>Publications</h2>
+	
+    	<ul class="spacing">
+	  <li>B. Fouotsa Tako, P. Kutas, S.-P. Merz. <i>On the Isogeny Problem with Torsion Point Information</i>,  <a href="https://eprint.iacr.org/2021/153.pdf">ePrint 2021/153</a>.</li>
+	  <li>P. Kutas, S.-P. Merz, C. Petit, C. Weitkämper. <i>One-way functions and malleability oracles: Hidden shift attacks on isogeny-based protocols</i>, EUROCRYPT 2021,  <a href="https://eprint.iacr.org/2021/282.pdf">ePrint 2021/282</a>.</li>
+          <li>S.D. Galbraith, R. Granger, S.-P. Merz, C. Petit. <i>On Index Calculus Algorithms for Subfield Curves</i>, SAC 2020,  <a href="https://eprint.iacr.org/2020/1315.pdf">ePrint 2020/1315</a>.</li>
+          <li>A. Basso, P. Kutas, S.-P. Merz, C. Petit, C. Weitkämper. <i>On Adaptive Attacks against Jao-Urbanik's Isogeny-Based Protocol</i>, AFRICACRYPT 2020, <a href="https://eprint.iacr.org/2020/244.pdf">ePrint 2020/244</a>.</li>
+	  <li>S.-P. Merz, R. Minko, C. Petit. <i>Another look at some isogeny hardness assumptions</i>, CT-RSA 2020,  <a href="https://eprint.iacr.org/2019/950.pdf">ePrint 2019/950</a>.</li>
+          <li>S.-P. Merz, C. Petit. <i>Factoring Products of Braids via Garside Normal Form</i>, PKC 2019,  <a href="https://eprint.iacr.org/2018/1142.pdf">ePrint 2018/1142</a>.</li>
+        </ul>
+
+	<br />
+	<br />
+
+	<h2>Talks</h2>
+    	<ul class="spacing">
+        <li><span class="event-name">SAC 2020</span>, Halifax, Nova Scotia (virtual), 27 February 2020.</li>
+	<div class="indent">Presentation of the paper <i>On Index Calculus Algorithms for Subfield Curves</i>, <a href="Slides_Index_SAC_2020.pdf">slides</a>.</div></li>
+	<li><span class="event-name">CT-RSA 2019</span>, San Francisco (US), 27 February 2020.</li>
+	<div class="indent">Presentation of the paper <i>Another look at some isogeny hardness assumptions</i> at the Cryptographer's Track of the RSA Conference, <a href="Slides_Another_CT-RSA_2020.pdf">slides</a>.</div></li>
+        <li><span class="event-name">ISF World Congress</span>, Dublin (IR), 26 October 2019.</li>
+	<div class="indent">Invited talk on mathematical problems underlying elliptic curve and isogeny-based cryptography.</div></li>
+        <li><span class="event-name">PKC 2019</span>, Beijing (CN), 16 April 2019.</li>
+	<div class="indent">Presentation of the paper <i>Factoring Products of Braids via Garside Normal Form</i>, <a href="Slides_Factoring_PKC_2019.pdf">slides</a>.</div></li>
+      </ul>
+
+<br />
+<br />
+
+
+	<h2>Teaching</h2>
+	During the winter semester 2015-2016, I was a teaching assistant for the course <i>Computational Mathematics and Scientific Computing</i>. 
+
+
+
+
+
+      </section>
+    </main>
+
+   
+  </div>
+
+ 
+</body>
+
+</html>
+
